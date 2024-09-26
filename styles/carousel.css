@@ -1,0 +1,26 @@
+.carousel-container {
+          overflow: hidden;
+          position: relative;
+          width: 600px;
+          /* Increase the width */
+          height: 400px;
+          /* Increase the height */
+}
+
+.carousel-slide {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          opacity: 0;
+          transition: opacity 1s ease-in-out;
+}
+
+.carousel-slide img {
+          width: 100%;
+          height: 100%;
+          object-fit:contain;
+}
+
+.active {
+          opacity: 1;
+}

@@ -1,0 +1,113 @@
+
+.layer1{
+          display: flex;
+          flex-direction: row;
+          /* justify-content: space-around; */
+          align-items: center;
+          /* background-color: aqua; */
+          /* width:1000px; */
+          margin:15px auto;
+}
+.layer1 .img{
+          height:350px;
+          /* border:1px solid black; */
+          width:50%;
+          /* overflow: hidden; */
+}
+.layer1 .img img{
+          width:100%;
+          height:100%;
+          object-fit:cover;
+}
+.layer1 .welcome{
+          width:50%;
+          padding:70px;
+          background-color: #8BC34A;
+          color: #fff;
+          
+}
+.layer1 .welcome h1{
+          font-family:pb;
+          font-size:40px;
+}
+.layer1 .welcome p{
+          font-family:pr;
+          font-size:14px;
+}
+
+.layer2{
+          display: flex;
+          flex-direction: row-reverse;
+          /* justify-content: space-around; */
+          align-items: center;
+          /* background-color: aqua; */
+          /* width:1000px; */
+          margin:15px auto;
+          padding-top:50px;
+}
+.layer2 .img{
+          height:350px;
+          /* border:1px solid black; */
+          width:50%;
+          /* overflow: hidden; */
+}
+.layer2 .img img{
+          width:100%;
+          height:100%;
+          object-fit:contain;
+}
+.layer2 .msg{
+          width:50%;
+          padding:70px;
+          background-color: #8BC34A;
+          color: #ffffff;
+          
+}
+.layer2 .msg h1{
+          font-family:pb;
+          font-size:40px;
+}
+.layer2 .msg p{
+          font-family:pr;
+          font-size:14px;
+}
+
+.layer3{
+          padding-top:30px;
+          border-bottom:5px solid #8BC34A;
+}
+.layer3 h1{
+          font-family: pb;
+          font-size:30px;
+          text-align:right;
+          border-bottom:2px solid #8BC34A;
+          color: #000000;
+          padding-right:70px;
+          /* width:700px; */
+}
+.layer3 .community {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          padding:50px 0;
+}
+.layer3 .community .socials{
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap:20px;
+          width:50%;
+}
+.layer3 .community .socials i{
+          background-color: #8BC34A;
+          color: #fff;
+          padding:7px;
+}
+.layer3 .community p{
+          width:50%;
+          font-family:pr;
+          padding-right: 50px;
+          color: #464545;
+         
+}

@@ -1,0 +1,92 @@
+.title {
+          background-image: url("../assets/images/a.jpg");
+          background-repeat: no-repeat;
+          background-size: cover;
+          border-bottom: 3px solid #8BC34A;
+          padding: 70px;
+}
+
+.title h1 {
+          text-align: center;
+          color: #ffffff;
+          font-family: pb;
+          font-size: 50px;
+}
+
+.services{
+          display:flex;
+          justify-content: space-between;
+          gap:50px;
+          flex-direction:row;
+          flex-wrap: wrap;
+          padding:0px 50px;
+          padding-top:90px;
+          padding-bottom:90px;
+          border-bottom: 5px solid #8BC34A;
+}
+
+.card {
+          position: relative;
+          width: 300px;
+          height: 200px;
+          /* background-image: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100%); */
+          background-position: center;
+          background-size: cover;
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+          transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card img {
+          width: 48px;
+          fill: #333;
+          transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card:hover {
+          transform: rotate(-5deg) scale(1.1);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card__content {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%) rotate(-45deg);
+          width: 100%;
+          height: 100%;
+          padding: 20px;
+          box-sizing: border-box;
+          background-color: #8BC34A;
+          opacity: 0;
+          transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.card:hover .card__content {
+          transform: translate(-50%, -50%) rotate(0deg);
+          opacity: 1;
+}
+
+.card__title {
+          font-family:pb;
+          margin: 0;
+          font-size: 22px;
+          color:#ffffff;
+          font-weight: 700;
+}
+
+.card__description {
+          font-family:pr;
+          margin: 10px 0 0;
+          font-size: 12px;
+          color:#ffffff;
+          line-height: 1.4;
+}
+
+.card:hover img {
+          scale: 0;
+          transform: rotate(-45deg);
+}
